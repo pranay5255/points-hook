@@ -2,6 +2,7 @@
 pragma solidity 0.8.26;
 
 import {BaseHook} from "v4-periphery/src/utils/BaseHook.sol";
+// #base hook implementation to use with v4-periphery
 import {ERC1155} from "solmate/src/tokens/ERC1155.sol";
 
 import {Currency} from "v4-core/types/Currency.sol";
@@ -86,7 +87,7 @@ contract PointsHook is BaseHook, ERC1155 {
         if (hookData.length == 0) return;
 
         // Extract user address from hookData
-        address user = abi.decode(hookData, (address));
+        address user = abi.decode(hookData, (address));                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
 
         // If there is hookData but not in the format we're expecting and user address is zero
         // nobody gets any points
